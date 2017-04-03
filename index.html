@@ -7,13 +7,13 @@
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
-
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-<!--    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
-
-<!--    <link href="css/style.css" rel="stylesheet">-->
-    <link href="css/print.css" rel="stylesheet">
-
+    
+    <!--inlined print for jump in performance -->
+    <style>
+    @media print{*{background:0 0!important;color:#000!important;text-shadow:none!important;filter:none!important;-ms-filter:none!important}a,a:visited{color:#444!important;text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}img,tr{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+    </style>
+    
+    <!--async google analytics -->
     <script async>
         (function(w, g) {
             w['GoogleAnalyticsObject'] = g;
@@ -28,11 +28,14 @@
         ga('send', 'pageview');
     </script>
     <script src="http://www.google-analytics.com/analytics.js" async></script>
+    
+    <!--async perfmatters.js-->
     <script src="js/perfmatters.js" async></script>
 </head>
 
 <body>
     <header>
+        <!--optimized image-->
         <a href="/"><img src="img/optimized_profilepic.jpg"  alt="image of mobile phones">
         </a>
         <p>
@@ -53,8 +56,9 @@
         <div class="content">
             <ul>
                 <li>
-
+                    <!--optimized image-->
                     <img src="img/optimize_historical_2048.jpg"  alt="image of mobile app">
+                    <!--optimized image-->
                      <img src="img/2048.png"  alt="image of the mobile app game 2048">
                     <a href="project-2048.html">
                         Build Your Own 2048!
@@ -65,6 +69,7 @@
                 </li>
 
                 <li>
+                    <!--optimized image-->
                     <img src="img/optimized_crp-image.jpg"  alt="image of cameron and crp expert">
                     <a href="project-webperf.html">
                         Website Performance Optimization
@@ -75,7 +80,8 @@
                 </li>
 
                 <li>
-                    <img src="img/optimized_mobile-image.jpg" alt="image of mobile phones"> <!--NEED THIS IMAGE -->
+                    <!--optimized image-->
+                    <img src="img/optimized_mobile-image.jpg" alt="image of mobile phones">
                     <a href="project-mobile.html">
                         Mobile Web Development
                     </a>
@@ -85,6 +91,7 @@
                 </li>
 
                 <li>
+                    <!--optimized image-->
                     <img style="width: 100px;" src="img/optimized_pizzeria.jpg" alt="image of a pizzeria with pizzas">  
                     <a href="views/pizza.html">
                         Cam's Pizzeria
@@ -101,6 +108,8 @@
             </p>
         </footer>
     </div>
+    
+    <!--deferred styles for fast load-->
     <noscript id="deferred-styles">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.css"/>
