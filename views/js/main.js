@@ -499,9 +499,10 @@ var resizePizzas = function(size) {
 
 window.performance.mark("mark_start_generating"); // collect timing data
 
+var pizzasDiv = document.getElementById("randomPizzas");
 // This for-loop actually creates and appends all of the pizzas when the page loads
 for (var i = 2; i < 100; i++) {
-    var pizzasDiv = document.getElementById("randomPizzas");
+ 
     pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -538,7 +539,7 @@ function updatePositions() {
     var scrollLoc = document.body.scrollTop; //This creates an object to hold the number of pixels an element's content is scrolled
     var section = [0, 0, 0, 0, 0]; //creates array for sections
     for (var i = 0; i < 5; i++) { //increment through sections
-        section[i] = Math.cos((scrollLoc / 1250) + (i % 5)); //This sets a number for the section array through the scroll location and section modulo
+        section[i] = Math.sin((scrollLoc / 1250) + (i % 5)); //This sets a number for the section array through the scroll location and section modulo
     }
     for (i = 0; i < movingPizza.length; i++) { //increment through the moving pizza elements
         movingPizza[i].style.left = movingPizza[i].basicLeft + 100 * section[i % 5] + 'px'; //Update styles to new location
@@ -562,7 +563,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
     var s = 256;
-    for (var i = 0; i < 200; i++) {
+    for (var i = 0; i < 48; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/optimized_pizza.png";
