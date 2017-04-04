@@ -2,7 +2,7 @@
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
-To view the final project please view [this link](http://kjwhitla.github.io/frontend-nanodegree-mobile-portfolio/)
+To view the final project please view [this link](http://madebykeegan.com/frontend-nanodegree-mobile-portfolio/)
 
 ### Changes to the pages
 
